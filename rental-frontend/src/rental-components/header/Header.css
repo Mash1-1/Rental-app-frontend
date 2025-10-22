@@ -1,0 +1,91 @@
+.header{
+    /* margin-left: auto; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image: linear-gradient(120deg, rgb(189, 188, 188), grey);
+}
+
+.home{
+    margin-left: 120px;
+    margin-right: auto;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(2, 58, 123);
+    text-shadow: .5px .8px black;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px 15px;
+    /* background-color: white; */
+    border: none;
+    border-radius: 5px;
+    color: rgb(222, 218, 218);
+    font-size: 15px;
+}
+
+a:not(:last-child){
+    margin-right: 10px;
+}
+
+a:hover{
+    background-color: rgb(222, 218, 218);
+    color: black;
+}
+
+button{
+    margin-right: 50px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(2, 58, 123);
+    color: white;
+    font-size: 15px;
+}
+
+button:not(:last-child){
+    margin-right: 10px;
+}
+
+button:hover{
+    background-color: rgb(0, 36, 78);
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.user-name{
+    margin-left: 10px;
+    color: blanchedalmond;
+    text-shadow: 1px 1px black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.user-name:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.user-img{
+    background-color: yellow;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.user-img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px black;
+}
