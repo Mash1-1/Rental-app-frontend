@@ -10,10 +10,13 @@ function RentalCard({ title = "", itemImagePath = "../assets/react.svg" }) {
 
     return (
         <div className="container">
+            <div className="title">
             <p>{title}</p>
             <p>{count}</p>
-            <img className="rental-image" src={itemImagePath} alt="img1" />
-            <br />
+            </div>
+            <div className="img-container">
+                <img className="rental-image" src={itemImagePath} alt="img1" />
+            </div>
             <button onClick={handleRent} className="rental-button">
                 Rent
             </button>
