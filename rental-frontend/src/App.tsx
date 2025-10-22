@@ -1,11 +1,5 @@
-import RentalCard from "./rental-components/RentalCard";
-
 function App() {
-    return (
-        <>
-            <RentalCard title="Hello" />
-        </>
-    );
+    return <></>;
 }
 
 export default App;

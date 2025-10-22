@@ -1,22 +1,24 @@
-import { useState } from "react";
 import "./rental.css";
+import RentalButton from "./RentalButton";
+import RentalImage from "./RentalImage";
 
-function RentalCard({ title = "", itemImagePath = "../assets/react.svg" }) {
-    let [count, setCount]: [number, any] = useState(1);
-
-    function handleRent() {
-        setCount(count + 1);
-    }
-
+function RentalCard({
+    title = "",
+    itemImagePath = "/images.jpg",
+    price = 0,
+    description = "lorem ipsum is a placeholder",
+}) {
     return (
         <div className="container">
-            <p>{title}</p>
-            <p>{count}</p>
-            <img className="rental-image" src={itemImagePath} alt="img1" />
-            <br />
-            <button onClick={handleRent} className="rental-button">
-                Rent
-            </button>
+            <h1 className="rental-title">
+                <b>{title}</b>
+            </h1>
+            <RentalImage itemImagePath={itemImagePath} />
+            <p>Price : {price}</p>
+            <p className="rental-description">
+                Desciption : <br /> {description}
+            </p>
+            <RentalButton />
         </div>
     );
 }
