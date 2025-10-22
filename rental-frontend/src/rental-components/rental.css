@@ -1,0 +1,27 @@
+.container {
+    background-color: rgb(170, 149, 149);
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 2px 2px rgba(136, 83, 83, 0.453);
+    transition: all 0.2s ease-in;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px rgba(136, 83, 83, 0.453);
+}
+
+.rental-image {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.rental-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+}
+
+.rental-button:hover {
+}
